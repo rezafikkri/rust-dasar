@@ -172,3 +172,31 @@ fn test_unit() {
     let result = unit(); // akan menghasilkan unit atau tuple kosong '()'
     println!("{:?}", result);
 }
+
+#[test]
+fn array() {
+    let arr = [12, 34, 56];
+    println!("{:?}", arr);
+
+    println!("{}", arr[0]);
+
+    let [a, b, c] = arr;
+    println!("{a}");
+    println!("{b}");
+    println!("{c}");
+}
+
+#[test]
+fn mutable_array() {
+    let mut arr = [13, 14, 15, 10];
+    println!("{:?}", arr);
+
+    arr[0] = 200;
+    println!("{:#?}", arr);
+}
+
+#[test]
+fn array_length() {
+    let arr = [1, 2, 3, 4, 100, 99];
+    println!("{}", arr.len()); // 6
+}
