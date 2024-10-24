@@ -112,3 +112,9 @@ fn boolean() {
     let b: bool = true;
     println!("{a} {b}");
 }
+
+#[test]
+fn comparison_operator() {
+    let a = 10 > 20;
+    println!("{a}");
+}
