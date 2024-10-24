@@ -32,3 +32,12 @@ fn static_typing() {
     // name = 10;
     println!("My name now is {name}");
 }
+
+#[test]
+fn shadowing() {
+    let name = "Reza Sariful Fikri";
+    println!("My name is {name}");
+
+    let name = 10;
+    println!("My name now is {name}");
+}
