@@ -22,3 +22,13 @@ fn variable_nutable() {
     name = "Adelina Damayanti";
     println!("My name now is {name}");
 }
+
+#[test]
+fn static_typing() {
+    // let mut name = "Reza Sariful Fikri";
+    let name = "Reza Sariful Fikri";
+    println!("My name is {name}");
+
+    // name = 10;
+    println!("My name now is {name}");
+}
