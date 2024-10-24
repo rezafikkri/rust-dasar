@@ -56,3 +56,59 @@ fn explicit() {
     let number: u8 = 128;
     print!("{number}");
 }
+
+#[test]
+fn number() {
+    let a: u8 = 255;
+    println!("{a}");
+
+    let b: f32 = 2345.4;
+    println!("{b}");
+}
+
+#[test]
+fn integer_and_float_conversion() {
+    let a: i8 = 122;
+    println!("{a}");
+
+    let b: i64 = a as i64;
+    println!("{b}");
+
+    let c: i32 = b as i32;
+    println!("{c}");
+
+    let d: f32 = 123.4;
+    println!("{d}");
+
+    let e: f64 = d as f64;
+    println!("{e}");
+
+    // ex. Integer Overflow
+    let f: i32 = 1000000000;
+    println!("{f}");
+
+    let g: i8 = f as i8;
+    println!("{g}");
+}
+
+#[test]
+fn numeric_operator() {
+    let a = 10;
+    let b = 12;
+    let c = a*b;
+    println!("{c}");
+}
+
+#[test]
+fn augmented_assignment() {
+    let mut a = 20;
+    a -= 10;
+    println!("{a}");
+}
+
+#[test]
+fn boolean() {
+    let a = false;
+    let b: bool = true;
+    println!("{a} {b}");
+}
