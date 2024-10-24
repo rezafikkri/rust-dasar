@@ -66,6 +66,7 @@ fn number() {
     println!("{b}");
 }
 
+// type casting
 #[test]
 fn integer_and_float_conversion() {
     let a: i8 = 122;
@@ -117,4 +118,57 @@ fn boolean() {
 fn comparison_operator() {
     let a = 10 > 20;
     println!("{a}");
+}
+
+#[test]
+fn boolean_operator() {
+    let absen = 70;
+    let nilai_akhir = 80;
+
+    let lulus_absen = absen > 75;
+    let lulus_nilai_akhir = nilai_akhir > 75;
+
+    let lulus = lulus_absen && lulus_nilai_akhir;
+
+    println!("{lulus}");
+}
+
+#[test]
+fn char_type() {
+    let char1: char = 'a';
+    let char2: char = 'b';
+
+    println!("{char1} {char2}");
+}
+
+#[test]
+fn tuple() {
+    let data = (10, 5.5, true);
+    println!("{:?}", data);
+
+    // println!("{}", data.0);
+    // println!("{}", data.1);
+    // println!("{}", data.2);
+
+    let (a, b, _) = data;
+    println!("{} {}", a, b);
+}
+
+#[test]
+fn mutable_tuple() {
+    let mut data = (10, 5.5, true);
+    println!("{:?}", data);
+
+    data.0 = 11;
+    println!("{:?}", data.0 as f32);
+}
+
+fn unit() {
+    println!("Hello");
+}
+
+#[test]
+fn test_unit() {
+    let result = unit(); // akan menghasilkan unit atau tuple kosong '()'
+    println!("{:?}", result);
 }
