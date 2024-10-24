@@ -50,3 +50,9 @@ fn comment() {
     println!("Comment"); // Ini adalah comment satu baris
     println!("Comment single line");
 }
+
+#[test]
+fn explicit() {
+    let number: u8 = 128;
+    print!("{number}");
+}
