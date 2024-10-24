@@ -200,3 +200,14 @@ fn array_length() {
     let arr = [1, 2, 3, 4, 100, 99];
     println!("{}", arr.len()); // 6
 }
+
+#[test]
+fn two_dimensional_array() {
+    let matrix: [[i32; 2]; 2] = [
+        [1, 2],
+        [3, 4],
+    ];
+
+    println!("{:?}", matrix);
+    println!("{}", matrix[1][0]);
+}
